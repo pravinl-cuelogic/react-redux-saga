@@ -6,3 +6,5 @@ export const add = number => action(actions.ADD, { number });
 export const sub = number => action(actions.SUB, { number });
 
 export const change = number => action(actions.CHANGE, { number });
+
+export const getAllUsersAction = users => action(actions.GET_ALL_USERS, { users });

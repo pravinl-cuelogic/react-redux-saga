@@ -6,6 +6,11 @@ const calc = (state = {}, action) => {
     return Object.assign({}, state, {
       number: action.number,
     });
+  case actions.GET_ALL_USERS:
+    console.log('actions.GET_ALL_USERS:',action);
+    return Object.assign({}, state, {
+      allUsers: action.payload,
+    });
   default:
     return state;
   }

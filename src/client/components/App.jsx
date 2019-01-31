@@ -12,6 +12,7 @@ export default class App extends React.Component {
     parseInt(e.target.value) ? this.props.change(parseInt(e.target.value)): '';
   }
   render() {
+    console.log('component props', this.props);
     return (<div className="container">
       <Button bsStyle="primary" onClick={() => this.props.add(this.props.number)}>
           +
