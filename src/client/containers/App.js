@@ -1,13 +1,17 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Button, FormControl } from 'react-bootstrap';
 import App from '../components/App';
+import UserTable from '../components/UserTable';
+import DetailsComponent from '../components/UserTable';
 import { add, sub, change, getAllUsersAction } from '../actions';
 import '../styles/App.scss';
 
 const mapStateToProps = state => ({
   number: state.calc.number,
+  allUsers: state.calc.allUsers,
 });
 
 const mapDispatchToProps = dispatch =>
@@ -28,12 +32,12 @@ class MainApp extends React.Component {
   
   render() {
     console.log('props',this.props);
-    console.log('states',this.state);
     const {
       add,
       sub,
       getAllUsersAction,
-      number
+      number,
+      allUsers,
     } = this.props;
     // console.log('number',number);
     const onClickGetUsersBtn = () => {
@@ -48,6 +52,7 @@ class MainApp extends React.Component {
             Get All Users
           </Button>
         </div>
+        <UserTable users={allUsers}/>
       </div>
     );
   }

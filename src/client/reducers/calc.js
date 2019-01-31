@@ -5,6 +5,7 @@ const calc = (state = {}, action) => {
   case actions.SAVE:
     return Object.assign({}, state, {
       number: action.number,
+      allUsers: action.allUsers,
     });
   case actions.GET_ALL_USERS:
     console.log('actions.GET_ALL_USERS:',action);
