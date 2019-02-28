@@ -6,34 +6,6 @@
 
 <br />
 
-<div align="center">
-  <!-- Dependency Status -->
-  <a href="https://david-dm.org/prabaprakash/React-Redux-Saga-Boilerplate">
-    <img src="https://david-dm.org/prabaprakash/React-Redux-Saga-Boilerplate.svg" alt="Dependency Status" />
-  </a>
-  <!-- devDependency Status -->
-  <a href="https://david-dm.org/prabaprakash/React-Redux-Saga-Boilerplate#info=devDependencies">
-    <img src="https://david-dm.org/prabaprakash/React-Redux-Saga-Boilerplate/dev-status.svg" alt="devDependency Status" />
-  </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/prabaprakash/Awesome-React-Redux-Saga-Boilerplate">
-    <img src="https://travis-ci.org/prabaprakash/Awesome-React-Redux-Saga-Boilerplate.svg" alt="Build Status" />
-  </a>
-  <a href="https://circleci.com/gh/prabaprakash/React-Redux-Saga-Boilerplate/tree/master">
-    <img src="https://circleci.com/gh/prabaprakash/React-Redux-Saga-Boilerplate/tree/master.svg?style=svg" alt="Build Status" />
-  </a>
-  <a href='https://coveralls.io/github/prabaprakash/React-Redux-Saga-Boilerplate?branch=master'>
-    <img src='https://coveralls.io/repos/github/prabaprakash/React-Redux-Saga-Boilerplate/badge.svg?branch=master' alt='Coverage Status' /></a>
-    <a href='http://52.187.134.188:8080/dashboard?id=praba'>
-    <img src='http://52.187.134.188:8080/api/project_badges/measure?project=praba&metric=alert_status' alt='Coverage Status' /></a>
-  <!-- Gitter 
-  <a href="https://gitter.im/flexdinesh/react-redux-boilerplate">
-    <img src="https://camo.githubusercontent.com/54dc79dc7da6b76b17bc8013342da9b4266d993c/68747470733a2f2f6261646765732e6769747465722e696d2f6d78737462722f72656163742d626f696c6572706c6174652e737667" alt="Gitter Chat" />
-  </a> 
--->
-</div>
-<br />
-
 # Pre-requisites:
   *  Node v8.9.4
   *  PM2        : `npm install -g pm2`
@@ -46,10 +18,10 @@
 ```shell
 $ npm run start
 
-> reactredux@1.0.0 prestart C:\Users\paranganat\Desktop\ReactRedux
+> reactredux@1.0.0 prestart C:\Users\pravin\Desktop\ReactRedux
 > pm2 start src/server/ecosystem.config.js
 
-[PM2] Spawning PM2 daemon with pm2_home=C:\Users\paranganat\.pm2
+[PM2] Spawning PM2 daemon with pm2_home=C:\Users\pravin\.pm2
 [PM2] PM2 Successfully daemonized
 [PM2][WARN] Applications redux not running, starting...
 [PM2] App [redux] launched (1 instances)
@@ -60,7 +32,7 @@ $ npm run start
 └──────────┴────┴─────────┴───────┴────────┴─────────┴────────┴─────┴───────────┴────────────┴──────────┘
  Use `pm2 show <id|name>` to get more details about an app
 
-> reactredux@1.0.0 start C:\Users\paranganat\Desktop\ReactRedux
+> reactredux@1.0.0 start C:\Users\pravin\Desktop\ReactRedux
 > npm run build:dll:dev && webpack -d --watch --progress --colors
 
 
@@ -116,7 +88,7 @@ Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist 
 ```shell
 $ npm run prod && npm run serve
 
-> reactredux@1.0.0 preprod C:\Users\paranganat\Desktop\ReactRedux
+> reactredux@1.0.0 preprod C:\Users\pravin\Desktop\ReactRedux
 > pm2 start src/server/ecosystem.config.js
 
 [PM2] Applying action restartProcessId on app [redux](ids: 0)
@@ -124,15 +96,15 @@ $ npm run prod && npm run serve
 ┌──────────┬────┬─────────┬──────┬────────┬─────────┬────────┬─────┬───────────┬────────────┬──────────┐
 │ App name │ id │ mode    │ pid  │ status │ restart │ uptime │ cpu │ mem       │ user       │ watching │
 ├──────────┼────┼─────────┼──────┼────────┼─────────┼────────┼─────┼───────────┼────────────┼──────────┤
-│ redux    │ 0  │ cluster │ 7768 │ online │ 4       │ 0s     │ 0%  │ 29.6 MB   │ paranganat │ enabled  │
+│ redux    │ 0  │ cluster │ 7768 │ online │ 4       │ 0s     │ 0%  │ 29.6 MB   │ pravin     │ enabled  │
 └──────────┴────┴─────────┴──────┴────────┴─────────┴────────┴─────┴───────────┴────────────┴──────────┘
  Use `pm2 show <id|name>` to get more details about an app
 
-> reactredux@1.0.0 prod C:\Users\paranganat\Desktop\ReactRedux
+> reactredux@1.0.0 prod C:\Users\pravin\Desktop\ReactRedux
 > npm run build:dll:prod && webpack -p --watch --progress --colors
 
 
-> reactredux@1.0.0 build:dll:prod C:\Users\paranganat\Desktop\ReactRedux
+> reactredux@1.0.0 build:dll:prod C:\Users\pravin\Desktop\ReactRedux
 > webpack -p --config webpack.library.config.js
 
 Hash: db478f551a9bcb7e7b77
@@ -184,7 +156,7 @@ Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist 
 ```shell
 $ npm run test
 
-> reactredux@1.0.0 test C:\Users\paranganat\Desktop\ReactRedux
+> reactredux@1.0.0 test C:\Users\pravin\Desktop\ReactRedux
 > nyc mocha
 
 
@@ -271,7 +243,7 @@ All files          |    91.67 |    72.55 |    90.32 |    90.67 |                
 ```shell
 $ npm run featuretest
 
-> reactredux@1.0.0 featuretest C:\Users\paranganat\Desktop\ReactRedux
+> reactredux@1.0.0 featuretest C:\Users\pravin\Desktop\ReactRedux
 > nightwatch
 
 Starting selenium server in parallel mode... started - PID:  10916
@@ -375,13 +347,5 @@ INFO Selenium process finished.
 - [uglifyjs-webpack-plugin](https://ghub.io/uglifyjs-webpack-plugin): UglifyJS plugin for webpack
 - [webpack](https://ghub.io/webpack): Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jsx, es7, css, less, ... and your custom stuff.
 - [webpack-cli](https://ghub.io/webpack-cli): CLI for webpack &amp; friends
-
-### Links
-- [Donate](https://www.patreon.com/prabaprakash)
-
-### License
-Copyright (c) 2018 Praba Prakash, contributors.
-
-Released under the [MIT license](https://github.com/prabaprakash/React-Redux-Saga-Boilerplate/blob/master/LICENSE).
 
 Screenshots are [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) (Attribution-ShareAlike)
